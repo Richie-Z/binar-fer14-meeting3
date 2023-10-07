@@ -8,7 +8,54 @@
 </head>
 
 <body>
-
+  <hr>
+  <h2>A Form</h2>
+  <form onsubmit="formSubmitted(event)">
+    <p>
+      <label>Salutation</label>
+      <br>
+      <select name="" id="">
+        <option value="" disabled selected>--None--</option>
+        <option value="">Ayla</option>
+        <option value="">Yla</option>
+      </select>
+    </p>
+    <p>
+      <label for="">First name : </label>
+      <input type="text" id="firstName" value="Richie">
+    </p>
+    <p>
+      <label for="">Last name :</label>
+      <input type="text" id="lastName" value="Zakaria">
+    </p>
+    <p>
+      <label for="">Gender :</label>
+      <input type="radio" name="gender" value="male" required> Male
+      <input type="radio" name="gender" value="female" required> Female
+    </p>
+    <p>
+      <label for="">Date of birth :</label>
+      <input type="date" name="" id="">
+    </p>
+    <p>
+      <label for="">Address :</label>
+      <br>
+      <textarea rows="" cols=""></textarea>
+    </p>
+    <p>
+      <button type="submit">Submit</button>
+    </p>
+  </form>
+  <hr>
 </body>
+<script>
+  function formSubmitted(event) {
+    event.preventDefault()
+    const firstName = document.querySelector('#firstName').value
+    const lastName = document.querySelector('#lastName').value
+    const gender = document.querySelector('input[name="gender"]:checked').value
+    alert(`Your full name is: ${firstName} ${lastName}, gender: ${gender}`)
+  }
+</script>
 
 </html>
