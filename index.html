@@ -1,14 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <title>Form</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
 
-<head>
-  <title>Form</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+    <body>
+        <!--Ignatius-->
+        <form action="">
+            <div class="inputGroup" style="display: block">
+                <label for="salutation">Salutation</label>
+                <select id="salutation">
+                    <option value="ayla">Ayla</option>
+                    <option value="agya">Agya</option>
+                    <option value="calya">Calya</option>
+                    <option value="sigra">Sigra</option>
+                </select>
+            </div>
 
-<body>
+            <div class="inputGroup" style="display: block">
+                <label for="firstNameInput">First name: </label>
+                <input type="text" name="firstName" id="firstNameInput" />
+            </div>
 
-</body>
+            <div class="inputGroup" style="display: block">
+                <label for="lastNameInput">Last name: </label>
+                <input type="text" name="lastName" id="lastNameInput" />
+            </div>
 
+            <div class="inputGroup" style="display: block">
+                <label for="genderInput">Gender :</label>
+                <input
+                    type="radio"
+                    name="gender"
+                    id="genderInput"
+                    value="male"
+                />
+                Male
+                <input
+                    type="radio"
+                    name="gender"
+                    id="genderInput"
+                    value="female"
+                />
+                Female
+            </div>
+
+            <div class="inputGroup" style="display: block">
+                <label for="emailInput">Email :</label>
+                <input type="email" name="email" id="emailInput" />
+            </div>
+
+            <div class="inputGroup" style="display: block">
+                <label for="dateInput">Date of Birth :</label>
+                <input type="date" name="DOB" id="dateInput" />
+            </div>
+
+            <div class="inputGroup" style="display: block">
+                <label for="addressInput">Address :</label>
+                <textarea
+                    name=""
+                    id="addressInput"
+                    cols="30"
+                    rows="10"
+                    style="display: block"
+                ></textarea>
+            </div>
+
+            <input type="submit" value="Submit" />
+        </form>
+    </body>
 </html>
