@@ -3,11 +3,93 @@
 
 <head>
   <title>Form</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
 <body>
+  <!--Ignatius-->
+  <form action="">
+    <div class="inputGroup" style="display: block">
+      <label for="salutation">Salutation</label>
+      <select id="salutation">
+        <option value="ayla">Ayla</option>
+        <option value="agya">Agya</option>
+        <option value="calya">Calya</option>
+        <option value="sigra">Sigra</option>
+      </select>
+    </div>
+    <div class="inputGroup" style="display: block">
+      <label for="firstNameInput">First name: </label>
+      <input type="text" name="firstName" id="firstNameInput" />
+    </div>
+
+    <div class="inputGroup" style="display: block">
+      <label for="lastNameInput">Last name: </label>
+      <input type="text" name="lastName" id="lastNameInput" />
+    </div>
+
+    <div class="inputGroup" style="display: block">
+      <label for="genderInput">Gender :</label>
+      <input type="radio" name="gender" id="genderInput" value="male" />
+      Male
+      <input type="radio" name="gender" id="genderInput" value="female" />
+      Female
+    </div>
+
+    <div class="inputGroup" style="display: block">
+      <label for="emailInput">Email :</label>
+      <input type="email" name="email" id="emailInput" />
+    </div>
+
+    <div class="inputGroup" style="display: block">
+      <label for="dateInput">Date of Birth :</label>
+      <input type="date" name="DOB" id="dateInput" />
+    </div>
+
+    <div class="inputGroup" style="display: block">
+      <label for="addressInput">Address :</label>
+      <textarea name="" id="addressInput" cols="30" rows="10" style="display: block"></textarea>
+    </div>
+
+    <input type="submit" value="Submit" />
+
+    <!--form jogi-->
+    <label for="select">Mobil</label>
+    <select name="select" id="Mobil">
+      <option value="Agya">Agya</option>
+      <option value="Agya">Ayla</option>
+      <option value="Agya">Sigra</option>
+      <option value="Agya">Cayla</option>
+    </select>
+    <br>
+    <br>
+    <label for="firstname">First name</label>
+    <input name="firstname" type="text">
+    <br>
+    <label for="lastname">Last name</label>
+    <input name="lastname" type="text">
+    <br>
+    <br>
+    <label for="Gender">Gender</label>
+    <input type="radio" name="Gender" value="laki-laki">
+    <label for="laki-laki">laki-laki</label>
+    <input type="radio" name="Gender" value="perempuan">
+    <label for="perempuan">perempuan</label>
+    <br>
+    <br>
+    <label for="email">Email</label>
+    <input type="text" name="email" id="">
+    <p>Tanggal</p>
+    <input type="date" name="" id="">
+    <p>Address</p>
+    <textarea name="" id="" cols="30" rows="5"></textarea>
+    <br>
+    <input type="button" value="submit">
+
+  </form>
+
+  <!-- form richie -->
   <hr>
   <h2>A Form</h2>
   <form onsubmit="formSubmitted(event)">
@@ -48,6 +130,7 @@
   </form>
   <hr>
 </body>
+
 <script>
   function formSubmitted(event) {
     event.preventDefault()
